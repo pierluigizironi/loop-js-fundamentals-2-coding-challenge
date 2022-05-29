@@ -14,4 +14,23 @@ an argument. This function calculates the average of all numbers in the given
 array.
 */
 
-const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals= [];
+
+for (let i = bill.length; i <= bill.length; i++) {
+    console.log(`${[i]}`);
+    
+    const calcTip = function(bill) {
+        if (bill >= 300 && bill <= 50) {
+            const totalTip15 = (bill * 15) / 100;
+            console.log(`The total tip is ${totalTip15}`)
+           return 
+        } else {
+            const totalTip20 = (bill * 20) / 100;
+            console.log(`The total tip is ${totalTip20}`)
+           return
+        }
+    }
+
+}
