@@ -16,14 +16,15 @@ array.
 
 const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
-const totals= [];
+const totals = [];
 
 for (let i = 0; i < bill.length; i++) {
     console.log(bill[i]);    
     const calcTip = function(bill) {
-        bill >= 300 && bill <= 50 ? console.log(`${(bill * 15) / 100}`) : console.log(`${(bill * 20) / 100}`) 
+       return  bill >= 300 && bill <= 50 ? (bill * 15) / 100 : (bill * 20) / 100; 
     }
     tips.push(calcTip(bill[i]));
+    console.log(tips[i])
+    totals.push(tips[i] + bill[i]);
+    console.log(totals[i]);
 }
-
-console.log(totals);
