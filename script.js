@@ -18,9 +18,8 @@ const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals= [];
 
-for (let i = bill.length; i <= bill.length; i++) {
-    console.log(`${[i]}`);
-    
+for (let i = 0; i < bill.length; i++) {
+    console.log(bill[i]);    
     const calcTip = function(bill) {
         if (bill >= 300 && bill <= 50) {
             const totalTip15 = (bill * 15) / 100;
@@ -32,5 +31,9 @@ for (let i = bill.length; i <= bill.length; i++) {
            return
         }
     }
-
+    tips.push(calcTip(bill[i]))
+    totals
 }
+
+console.log(tips)
+console.log(totals)
