@@ -13,3 +13,5 @@ Bonus:
 an argument. This function calculates the average of all numbers in the given
 array.
 */
+
+const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
